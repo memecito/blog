@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.listadoNoticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+@media (max-width:800px) {
+    .listadoNoticias{
+        flex-direction: column;
+    }
+
+}
+.noticia{
+    width: 300px;
+    padding: 5px 10px 5px 10px;    
+    /* border-bottom: 1px solid  red; */
+    border-radius: 5px;
+    background-color:white;
+    margin: 10px;
+    & .w_img{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    & img{
+        width: 250px;
+        /* margin: 0 auto; */
+    }
+    & .fecha{
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    & p{
+        padding: 10px;
+    }
+} 

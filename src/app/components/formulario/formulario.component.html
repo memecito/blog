@@ -1,0 +1,7 @@
+<div class="formulario">
+    <label for="titulo">Titulo</label><input id="titulo" type="text" placeholder="Titulo" required [(ngModel)]="newNoticia.titulo">
+    <label for="url">URL</label><input id="url" type="text" placeholder="URL" required [(ngModel)]="newNoticia.url">
+    <label for="texto">Cuerpo</label><input id="texto" type="text"  placeholder="Contenido" required [(ngModel)]="newNoticia.texto">
+    <label for="fecha">Fecha</label><input id="fecha" type="date" required >
+    <button (click)="cargarDatos()">Guardar</button>
+</div>

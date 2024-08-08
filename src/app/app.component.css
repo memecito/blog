@@ -1,0 +1,64 @@
+.main{
+    margin: auto;
+    width: 1500px; 
+    display: flex;
+    background-color: rgb(224, 224, 224);
+    
+  
+}
+
+.app-formulario{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.listado{
+    width: 1100px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1500px) {
+    .main{
+        width: 1000px;
+    }
+    .app-formulario{
+        width: 200px;
+    }
+   .listado{
+    width: 7000px;
+   }
+
+}
+@media (max-width:800px) {
+    
+    .main{
+        width: 600px;
+    }
+    .app-formulario{
+        width: 150px;
+    }
+   .listado{
+    width: 400px;
+   }
+
+}
+@media (max-width:550px) {
+    body{
+        min-width: none;
+    }
+    .main{
+        width: 450px;
+       flex-direction: column;
+    }
+    .app-formulario{
+        width: 150px;
+        margin: auto;
+    }
+   .listado{
+    width: 400px;
+    margin: 0 auto;
+   }
+
+}
